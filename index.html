@@ -1,0 +1,171 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>My Course Site — Home</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Dark mode toggle in top-right -->
+  <input type="checkbox" id="dark-toggle" class="visually-hidden">
+  <label for="dark-toggle" class="dark-toggle" aria-hidden="true">🌙</label>
+
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo.png" alt="My Course Site logo" width="40" height="40">
+        <span class="brand-text">CourseSite</span>
+      </a>
+
+      <!-- Mobile nav toggle (checkbox hack) -->
+      <input id="nav-toggle" type="checkbox" class="nav-toggle visually-hidden" aria-label="Toggle navigation">
+      <label for="nav-toggle" class="nav-icon" aria-hidden="true">
+        <span class="hamburger" aria-hidden="true"></span>
+      </label>
+
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html" class="nav-link">Home</a></li>
+          <li><a href="courses.html" class="nav-link">Courses</a></li>
+          <li><a href="blog.html" class="nav-link">Blog</a></li>
+          <li><a href="contact.html" class="nav-link btn btn-ghost">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- Pure CSS hero slider (bonus) -->
+    <section class="hero section">
+      <div class="container hero-grid">
+        <div class="hero-left">
+          <h1>Learn modern web development</h1>
+          <p class="lead">Responsive, accessible, polished front-end projects built using only HTML &amp; CSS.</p>
+          <p>
+            <a href="courses.html" class="btn">View Courses</a>
+            <a href="#features" class="btn btn-ghost">Why Us</a>
+          </p>
+        </div>
+
+        <div class="hero-right">
+          <!-- CSS-only slider (radio) -->
+          <div class="slider">
+            <input type="radio" id="slide1" name="slider" checked class="visually-hidden">
+            <input type="radio" id="slide2" name="slider" class="visually-hidden">
+            <input type="radio" id="slide3" name="slider" class="visually-hidden">
+
+            <div class="slides">
+              <figure class="slide" aria-hidden="false">
+                <img src="img/hero1.jpg" alt="Course preview 1">
+              </figure>
+              <figure class="slide" aria-hidden="true">
+                <img src="img/hero2.jpg" alt="Course preview 2">
+              </figure>
+              <figure class="slide" aria-hidden="true">
+                <img src="img/hero3.jpg" alt="Course preview 3">
+              </figure>
+            </div>
+
+            <div class="slider-controls">
+              <label for="slide1" class="dot" aria-label="Slide 1"></label>
+              <label for="slide2" class="dot" aria-label="Slide 2"></label>
+              <label for="slide3" class="dot" aria-label="Slide 3"></label>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="features" class="section">
+      <div class="container">
+        <h2>Features</h2>
+        <div class="features-grid">
+          <article class="card">
+            <h3>Responsive Design</h3>
+            <p>Layouts that adapt to mobile, tablet, and desktop using Grid and Flexbox.</p>
+          </article>
+          <article class="card">
+            <h3>Accessibility</h3>
+            <p>Semantic markup, high contrast, keyboard focus states, and alt text for images.</p>
+          </article>
+          <article class="card">
+            <h3>Polished UI</h3>
+            <p>Smooth transitions, card lift, and consistent component classes for maintainability.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container">
+      <h2>Popular Courses</h2>
+      <div class="courses">
+        <!-- Course card template - repeatable -->
+        <article class="card course-card">
+          <img src="img/course1.jpg" alt="Course: Responsive Web Design" class="card-img">
+          <div class="card-body">
+            <h3>Responsive Web Design</h3>
+            <p class="muted">6 modules • Beginner → Intermediate</p>
+            <p>Master mobile-first, CSS Grid, Flexbox and responsive patterns.</p>
+            <div class="card-actions">
+              <a class="btn" href="courses.html">View</a>
+              <a class="btn btn-ghost" href="#">Enroll</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card course-card">
+          <img src="img/course2.jpg" alt="Course: Advanced CSS Techniques" class="card-img">
+          <div class="card-body">
+            <h3>Advanced CSS Techniques</h3>
+            <p class="muted">8 modules • Intermediate</p>
+            <p>Animations, variables, responsive systems, and accessibility-friendly UI.</p>
+            <div class="card-actions">
+              <a class="btn" href="courses.html">View</a>
+              <a class="btn btn-ghost" href="#">Enroll</a>
+            </div>
+          </div>
+        </article>
+
+        <article class="card course-card">
+          <img src="img/course3.jpg" alt="Course: Project Portfolio" class="card-img">
+          <div class="card-body">
+            <h3>Project Portfolio</h3>
+            <p class="muted">5 modules • Beginner</p>
+            <p>Build deployable portfolio projects that showcase your skills.</p>
+            <div class="card-actions">
+              <a class="btn" href="courses.html">View</a>
+              <a class="btn btn-ghost" href="#">Enroll</a>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer section">
+    <div class="container footer-grid">
+      <div>
+        <h3>CourseSite</h3>
+        <p class="muted">Modern front-end courses & resources.</p>
+      </div>
+      <nav aria-label="Footer navigation">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div>
+        <p class="muted">© <span id="year"></span> CourseSite</p>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

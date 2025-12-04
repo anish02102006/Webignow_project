@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Courses — CourseSite</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <img src="img/logo.png" alt="CourseSite logo" width="40" height="40">
+        <span class="brand-text">CourseSite</span>
+      </a>
+      <input id="nav-toggle-2" type="checkbox" class="nav-toggle visually-hidden">
+      <label for="nav-toggle-2" class="nav-icon" aria-hidden="true">
+        <span class="hamburger"></span>
+      </label>
+      <nav class="nav" aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html" class="active">Courses</a></li>
+          <li><a href="blog.html">Blog</a></li>
+          <li><a href="contact.html" class="btn btn-ghost">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container">
+      <h1>All Courses</h1>
+      <p class="lead">Filter and browse our course catalog.</p>
+
+      <div class="courses courses-grid" aria-live="polite">
+        <article class="card course-card">
+          <img src="img/course1.jpg" alt="Responsive Web Design course image" class="card-img">
+          <div class="card-body">
+            <h2>Responsive Web Design</h2>
+            <p class="muted">Beginner • 6 modules</p>
+            <p>Learn to build mobile-first websites that flow across devices.</p>
+            <div class="card-actions">
+              <a href="#" class="btn">Details</a>
+            </div>
+          </div>
+        </article>
+        <article class="card course-card">
+          <img src="img/course2.jpg" alt="Advanced CSS course image" class="card-img">
+          <div class="card-body">
+            <h2>Advanced CSS Techniques</h2>
+            <p class="muted">Intermediate • 8 modules</p>
+            <p>CSS variables, patterns, animations, and modern layout systems.</p>
+            <div class="card-actions"><a href="#" class="btn">Details</a></div>
+          </div>
+        </article>
+        <article class="card course-card">
+          <img src="img/course3.jpg" alt="Portfolio course image" class="card-img">
+          <div class="card-body">
+            <h2>Project Portfolio</h2>
+            <p class="muted">Beginner • 5 modules</p>
+            <p>Build a portfolio to showcase your best work.</p>
+            <div class="card-actions"><a href="#" class="btn">Details</a></div>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer section">
+    <div class="container footer-grid">
+      <div><h3>CourseSite</h3><p class="muted">Learn by building.</p></div>
+      <nav aria-label="Footer">
+        <ul class="footer-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="courses.html">Courses</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </nav>
+      <div><p class="muted">© CourseSite</p></div>
+    </div>
+  </footer>
+</body>
+</html>
