@@ -11,7 +11,7 @@ Files included:
 - README.md
 
 How to run:
-1. Download and unzip the project.
+1. Download
 2. Open folder in VS Code.
 3. Open `index.html` in the editor and right-click -> "Open with Live Server" (or just double-click the file to open in browser).
 
